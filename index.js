@@ -1,10 +1,10 @@
-import { Configuration, OpenAIApi } from 'openai';
-
+import createChatCompletion from "openai";
+import { OpenAIApi } from "openai";
 import dotenv from 'dotenv';
 dotenv.config();
 
 
-const configuration = new Confidential({
+const configuration = new OpenAIApi.Confidential({
     apiKey: process.env.OPENAI_API_KEY
 });
 
